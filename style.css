@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./bricks.jpeg);
+    background-size: cover;
+    font-family: 'Yellowtail', cursive;
+}
+.neon-sign {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+    font-size: 120px;
+    color: white;
+    text-shadow: 0 0 20px #ff005b;
+}
+ .neon-sign::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #ff005b;
+    filter: blur(15px);
+}
+.neon-sign::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: 0.5;
+    filter: blur(40px);
+} 
