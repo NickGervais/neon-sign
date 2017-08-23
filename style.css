@@ -30,6 +30,7 @@ header {
     height: 100%;
     background: #fe3a80;
     opacity: .05;
+    animation: darken 10s linear infinite;
 }
 .sign {
     position: absolute;
@@ -126,7 +127,7 @@ header {
         opacity: 0.2;        
         text-shadow: 0 0 0px transparent;
     }
-    74.5% {
+    75% {
         color: white;
         opacity: 1;
         text-shadow: 0 0 20px #ff005b;
@@ -150,4 +151,54 @@ header {
     80% {
         filter: blur(25px);
     }
+}
+@keyframes darken {
+    0% {
+        background: #fe3a80;
+        opacity: .05;
+    }
+    67% {
+        background: #fe3a80;
+        opacity: .05;
+    }
+    68% {
+        background: black;
+        opacity: .05;        
+    }
+    68.5%{
+        background: #fe3a80;
+        opacity: .05;
+    }
+    69.5% {
+        background: #fe3a80;
+        opacity: .05;
+    }
+    70% {
+        background: black;
+        opacity: .05;
+    }
+    70.5% {
+        background: #fe3a80;
+        opacity: .05;
+    }
+    71% {
+        background: #fe3a80;
+        opacity: .05;
+    }
+    71.5% {
+        background: black;
+        opacity: .1;
+    }
+    74% {
+        background: black;
+        opacity: .1;
+    }
+    75% {
+        background: #fe3a80;
+        opacity: .05;
+    }
+    100% {
+        background: #fe3a80;
+        opacity: .05;
+    }    
 }
