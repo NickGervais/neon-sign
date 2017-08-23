@@ -32,12 +32,13 @@ header {
     opacity: .05;
 }
 .sign {
-    width: 100%;
-    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .neon-sign {
     margin: 0px;
@@ -46,7 +47,7 @@ header {
     font-size: 120px;
     color: white;
     text-shadow: 0 0 20px #ff005b;
-    display: inline-block;
+    display: block;
     animation: flicker 10s linear infinite;
 }
  .neon-sign::after {
@@ -61,7 +62,7 @@ header {
     animation: pulse 5s linear infinite;
 }
 .neon-sign::before {
-    display: block;
+    display: inline-block;
     content: '';
     position: absolute;
     top: 0;
