@@ -57,7 +57,8 @@ header {
     left: 0;
     z-index: -1;
     color: #ff005b; 
-    filter: blur(0px);
+    filter: blur(10px);
+    animation: pulse 5s linear infinite;
 }
 .neon-sign::before {
     display: block;
@@ -133,5 +134,19 @@ header {
         color: white;
         opacity: 1;
         text-shadow: 0 0 20px #ff005b;
+    }
+}
+@keyframes pulse {
+    0% {
+        filter: blur(10px);
+    }
+    30% {
+        filter: blur(25px);
+    }
+    60% {
+        filter: blur(10px);
+    }
+    80% {
+        filter: blur(25px);
     }
 }
