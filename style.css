@@ -163,7 +163,7 @@ header {
     }
     68% {
         background: black;
-        opacity: .05;        
+        opacity: .2;        
     }
     68.5%{
         background: #fe3a80;
@@ -175,7 +175,7 @@ header {
     }
     70% {
         background: black;
-        opacity: .05;
+        opacity: .2;
     }
     70.5% {
         background: #fe3a80;
@@ -187,11 +187,11 @@ header {
     }
     71.5% {
         background: black;
-        opacity: .1;
+        opacity: .2;
     }
     74% {
         background: black;
-        opacity: .1;
+        opacity: .2;
     }
     75% {
         background: #fe3a80;
